@@ -1,7 +1,11 @@
 package com.activity;
 
 import android.annotation.SuppressLint;
+import android.app.ActivityManager;
+import android.content.Context;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.HandlerThread;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.Window;
@@ -14,9 +18,13 @@ import com.R;
 public class SplashScreen extends BaseActivity implements View.OnTouchListener {
 
     private int count = 0;
+    private int backCount = 0;
 
     private ImageView imageLogo;
     private RelativeLayout background;
+
+    private Handler backHandler;
+    private Runnable backRunnable;
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -33,6 +41,31 @@ public class SplashScreen extends BaseActivity implements View.OnTouchListener {
 
         imageLogo.setOnTouchListener(this);
         background.setOnTouchListener(this);
+
+        HandlerThread backStateThread = new HandlerThread("BackStateThread", Thread.MAX_PRIORITY);
+        backStateThread.start();
+        backHandler = new Handler(backStateThread.getLooper());
+        backRunnable = () -> backCount = 0;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (backCount == 5) {
+            backCount = 0;
+            backHandler.removeCallbacks(backRunnable);
+            super.onBackPressed();
+        } else {
+            backHandler.postDelayed(backRunnable, 2000);
+            backCount++;
+        }
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        ActivityManager activityManager = (ActivityManager) getApplicationContext()
+                .getSystemService(Context.ACTIVITY_SERVICE);
+        activityManager.moveTaskToFront(getTaskId(), 0);
     }
 
     @SuppressLint("ClickableViewAccessibility")
