@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#cd1d26</color>
+    <color name="lightColorPrimary">#EA979D</color>
+    <color name="colorPrimaryDark">#550c10</color>
+    <color name="colorAccent">#1dcdc4</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="blue">#0000FF</color>
+    <color name="light_blue">#00FFFF</color>
+    <color name="purple">#FF00FF</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="white">#FFFFFF</color>
+    <color name="pink">#FF1493</color>
+    <color name="orange">#FFA500</color>
+
+    <color name="gray">#ffa8abad</color>
+    <color name="dark_gray">#767676</color>
+    <color name="light_gray">#cfcfcf</color>
+    <color name="title_gray">#646464</color>
+    <color name="dark_white">#f9f6f6</color>
+    <color name="light_black">#252424</color>
+    <color name="light_black_2">#353333</color>
+    <color name="transparent_color">#80000000</color>
+    <color name="dark_background">#FF424242</color>
+
+    <color name="dl_row_normal">#fefefe</color>
+    <color name="dl_row_selected">#ccddff</color>
+
+    <color name="dl_transport_on">#1361ff</color>
+    <color name="dl_transport_off">#888888</color>
+
+    <color name="dl_reader">#666666</color>
+    <color name="dl_description">#888888</color>
+
+    <color name="menu1">#FFE0B2</color>
+    <color name="menu2">#C8E6C9</color>
+    <color name="menu3">#EFBBCF</color>
+    <color name="menu4">#B2DEEC</color>
+    <color name="menu5">#ADD8E6</color>
+</resources>
