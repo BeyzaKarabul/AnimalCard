@@ -10,6 +10,7 @@ import android.graphics.Color;
 import android.graphics.Insets;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationManager;
+import android.media.MediaPlayer;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -48,6 +49,7 @@ public class BaseActivity extends AppCompatActivity implements ConnectivityRecei
     };
 
     private Snackbar sbConnectionStatus;
+    public MediaPlayer mPlayer;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

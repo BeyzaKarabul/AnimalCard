@@ -3,6 +3,7 @@ package com.activity;
 import android.annotation.SuppressLint;
 import android.app.ActivityManager;
 import android.content.Context;
+import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -26,6 +27,7 @@ public class SplashScreen extends BaseActivity implements View.OnTouchListener {
     private Handler backHandler;
     private Runnable backRunnable;
 
+
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +48,14 @@ public class SplashScreen extends BaseActivity implements View.OnTouchListener {
         backStateThread.start();
         backHandler = new Handler(backStateThread.getLooper());
         backRunnable = () -> backCount = 0;
+
+        mPlayer = MediaPlayer.create(this, R.raw.baby_shark);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mPlayer.start();
     }
 
     @Override
@@ -53,6 +63,7 @@ public class SplashScreen extends BaseActivity implements View.OnTouchListener {
         if (backCount == 5) {
             backCount = 0;
             backHandler.removeCallbacks(backRunnable);
+            mPlayer.stop();
             super.onBackPressed();
         } else {
             backHandler.postDelayed(backRunnable, 2000);
