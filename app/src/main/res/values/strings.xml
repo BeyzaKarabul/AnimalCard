@@ -120,4 +120,59 @@
     <string name="authorization_expired">Token has expired!</string>
     <string name="vib_buz_error">Buzzer and vibrate can not be turned off at the same time</string>
     <string name="go_gps_settings">GPS is not enabled. Do you want to go to settings menu?</string>
+
+    <string name="bat">Bat</string>
+    <string name="bear">Bear</string>
+    <string name="camel">Camel</string>
+    <string name="cat">Cat</string>
+    <string name="chick">Chick</string>
+    <string name="chicken">Chicken</string>
+    <string name="cock">Cock</string>
+    <string name="cow">Cow</string>
+    <string name="crocodile">Crocodile</string>
+    <string name="dog">Dog</string>
+
+    <string name="donkey">Donkey</string>
+    <string name="duck">Duck</string>
+    <string name="eagle">Eagle</string>
+    <string name="elephant">Elephant</string>
+    <string name="fish">Fish</string>
+    <string name="fox">Fox</string>
+    <string name="frog">Frog</string>
+    <string name="gazelle">Gazelle</string>
+    <string name="giraffe">Giraffe</string>
+    <string name="horse">Horse</string>
+
+    <string name="kangaroo">Kangaroo</string>
+    <string name="lamb">Lamb</string>
+    <string name="lemur">Lemur</string>
+    <string name="leon">Leon</string>
+    <string name="monkey">Monkey</string>
+    <string name="mountain_goat">Mountain Goat</string>
+    <string name="mouse">Mouse</string>
+    <string name="octopus">Octopus</string>
+    <string name="ostrich">Ostrich</string>
+    <string name="owl">Owl</string>
+
+    <string name="panda">Panda</string>
+    <string name="parrot">Parrot</string>
+    <string name="peacock">Peacock</string>
+    <string name="penguin">Penguin</string>
+    <string name="rabbit">Rabbit</string>
+    <string name="rhino">Rhino</string>
+    <string name="scorpion">Scorpion</string>
+    <string name="seagull">Seagull</string>
+    <string name="seal">Seal</string>
+    <string name="snail">Snail</string>
+
+    <string name="snake">Snake</string>
+    <string name="sparrow">Sparrow</string>
+    <string name="squirrel">Squirrel</string>
+    <string name="tiger">Tiger</string>
+    <string name="turkey">Turkey</string>
+    <string name="turtle">Turtle</string>
+    <string name="water_turtle">Water Turtle</string>
+    <string name="wolf">Wolf</string>
+    <string name="zebra">Zebra</string>
+    <string name="polar_bear">Polar Bear</string>
 </resources>
